@@ -53,7 +53,7 @@ pipeline {
                 // Install Wrangler locally for the project
                 sh 'yarn add wrangler --no-save'
                 // Deploy
-                sh "yarn wrangler pages deploy ./.vitepress/dist --project-name=${PRJ_NAME} --env=production"
+                sh "yarn wrangler pages deploy ./.vitepress/dist --project-name=${PRJ_NAME} --branch=main"
             }
         }
 
@@ -65,6 +65,7 @@ pipeline {
 //                 sh 'docker build -f Dockerfile -t ${REPOSITORY_URI}:${IMAGE_TAG} --label ${PRJ_NAME} .'
 //             }
 //         }
+
 
 //         stage('Docker Deploy - ECR') {
 //             steps {
