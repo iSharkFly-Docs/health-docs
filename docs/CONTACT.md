@@ -2,11 +2,11 @@
 
 请使用下面的联系方式和我们联系：
 
-| 联系方式名称             | 联系方式                                          |
-|--------------------|-----------------------------------------------|
-| 电子邮件               | [service@ossez.com](mailto:service@ossez.com) |
-| QQ 或微信             | 103899765                                     |
-| 社区论坛 （使用 mumps 标签） | https://www.isharkfly.com/tag/mumps           |
+| 联系方式名称              | 联系方式                                          |
+|---------------------|-----------------------------------------------|
+| 电子邮件                | [service@ossez.com](mailto:service@ossez.com) |
+| QQ 或微信              | 103899765                                     |
+| 社区论坛 （使用 health 标签） | https://www.isharkfly.com/tag/health          |
 
 # 公众平台
 
