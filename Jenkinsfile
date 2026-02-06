@@ -30,10 +30,6 @@ pipeline {
 		IMAGE_TAG      = 'latest'
 		REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
 
-		// Cloudflare -
-        CLOUDFLARE_ACCOUNT_ID = 'stonex/app-service'
-        CLOUDFLARE_API_TOKEN       = 'latest'
-        		REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
     }
 
      stages {
