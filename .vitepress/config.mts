@@ -5,8 +5,8 @@ export default defineConfig({
     ignoreDeadLinks: true,
     srcDir: './docs',
     lang: 'zh-Hans',
-    title: "iSharkFly 文档和手册",
-    description: "iSharkFly - Docs",
+    title: "iSharkFly Health 文档",
+    description: "iSharkFly - Health",
     head: [
         [
             'script',
@@ -27,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         ],
         footer: {
             message: '基于 MIT 许可发布',
-            copyright: `版权所有 © 2025-${new Date().getFullYear()} iSharkFly.COm`
+            copyright: `版权所有 © 2025-${new Date().getFullYear()} iSharkFly.Com`
         },
         sidebar: [
             {
