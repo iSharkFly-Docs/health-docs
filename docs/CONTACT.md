@@ -37,12 +37,3 @@
 
 请关注我们的知乎：https://www.zhihu.com/people/huyuchengus
 
-## 快速导航
-
-在下面的表格中，我们列出了一些比较有用的 CWIKIUS 相关软件开发使用教程的导航，欢迎访问下面的链接获得更多的内容和参与讨论
-
-| 网站名称               | URL                                                            | NOTE                      |
-|--------------------|----------------------------------------------------------------|---------------------------|
-| 鲨鱼君社区              | [www.isharkfly.com](https://www.isharkfly.com/)                | 开放社区，欢迎注册参与讨论             |
-| DOCS.ISHARKFLY.COM | [https://docs.isharkfly.com/#/](https://docs.isharkfly.com/#/) | 有关其他技术相关的文档和快速索引          |
-| CN 博客              | [http://www.cwikius.cn/](http://www.cwikius.cn/)               | CWIKIUS.CN 一个有独立思考和温度的清新站 |
