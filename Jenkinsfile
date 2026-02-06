@@ -8,7 +8,7 @@ pipeline {
     tools {
         jdk   'TemurinJDK-17'
         maven 'Maven 3.8.7'
-        nodejs  'NodeJS 20.19.0'
+        nodejs  'NodeJS 22.14.0'
     }
 
     environment {
@@ -29,16 +29,21 @@ pipeline {
 		IMAGE_REPO_NAME = 'stonex/app-service'
 		IMAGE_TAG      = 'latest'
 		REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
+
+		// Cloudflare -
+        CLOUDFLARE_ACCOUNT_ID = 'stonex/app-service'
+        CLOUDFLARE_API_TOKEN       = 'latest'
+        		REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
     }
 
      stages {
-	    stage("Pull Source Code"){
-			steps {
-			    git branch: 'main',
-			        credentialsId: 'c9d0ec7c-0749-4588-8960-e96cab84d462',
-			        url: 'https://src.isharkfly.com/iSharkFly-Docs/health-docs.git'
-			}
-		}
+// 	    stage("Pull Source Code"){
+// 			steps {
+// 			    git branch: 'main',
+// 			        credentialsId: 'c9d0ec7c-0749-4588-8960-e96cab84d462',
+// 			        url: 'https://src.isharkfly.com/iSharkFly-Docs/health-docs.git'
+// 			}
+// 		}
 
 		stage('Build / Package') {
 		    steps {
@@ -47,15 +52,14 @@ pipeline {
 		    }
 		}
 
-// 		stage('Deploy / Push to iSharkFly Repo') {
-//             steps {
-//                 // 'my-maven-settings' is the ID of the config file
-//                 // created in Jenkins "Managed files"
-//                 configFileProvider([configFile(fileId: '49b3b2cd-c4db-4167-a3c3-d8e050a039e6', variable: 'MAVEN_SETTINGS')]) {
-//                     sh 'mvn deploy -U -s $MAVEN_SETTINGS -DskipTests'
-//                 }
-//             }
-// 		}
+		stage('Deploy to Cloudflare') {
+            steps {
+                // Install Wrangler locally for the project
+                sh 'yarn install wrangler --no-save'
+                // Deploy
+                sh "npx wrangler pages deploy ./.vitepress/dist --project-name=${PROJECT_NAME}"
+            }
+        }
 
 //         stage('Build Docker') {
 //             steps {
