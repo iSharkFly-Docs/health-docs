@@ -53,7 +53,7 @@ pipeline {
                 // Install Wrangler locally for the project
                 sh 'yarn add wrangler --no-save'
                 // Deploy
-                sh "npx wrangler pages deploy ./.vitepress/dist --project-name=${PRJ_NAME} --environment:Production"
+                sh "yarn wrangler pages deploy ./.vitepress/dist --project-name=${PRJ_NAME} --env=production"
             }
         }
 
