@@ -31,87 +31,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         },
         sidebar: [
             {
-                text: '计算机相关技术',
+                text: 'FHIR',
+                collapsed: true,
+                link: '/fhir/',
                 items: [
-                    {
-                        text: '程序语言',
-                        collapsed: true,
-                        items: [
-                            {
-                                text: 'Java', link: '/programming-language/java/', collapsed: true,
-                                items: [
-                                    {text: '核心编程', link: '/programming-language/java/core/'},
-
-                                ]
-                            },
-                            {text: 'Python', link: '/programming-language/python/'},
-                            {text: 'Mumps', link: '/programming-language/mumps/'}
-                        ]
-                    },
+                    {text: '简介', link: '/fhir/introduction', collapsed: true},
                 ]
             },
             {
-                text: '框架和库',
-                collapsed: true,
-                link: '/framework/',
-                items: [
-                    {
-                        text: 'Spring',
-                        collapsed: true,
-                        items: [
-                            {
-                                text: 'Java', link: '/programming-language/java/', collapsed: true,
-                                items: [
-                                    {text: '核心编程', link: '/programming-language/java/core/'},
-
-                                ]
-                            },
-                            {text: 'Python', link: '/programming-language/python/'},
-                            {text: 'Mumps', link: '/programming-language/mumps/'}
-                        ]
-                    },
-                    {
-                        text: 'Node',
-                        collapsed: true,
-                        items: [
-                            { text: 'Yarn', link: '/framework/node/yarn', collapsed: true, },
-                        ]
-                    },
-                ]
+                text: 'Mumps', link: '/mumps',collapsed: true,
             },
             {
-                text: 'DevOps',
-                collapsed: true,
-                link: '/dev-ops/',
-                items: [
-                    {text: 'OS', link: '/dev-ops/os/linux'},
-                    {text: '数据库', link: '/dev-ops/database/',
-                        items: [
-                            {text: 'PostgreSQL', link: '/dev-ops/database/postgresql.md'},
-                            {text: 'MariaDB/MySQL', link: '/dev-ops/database/mariadb.md'},
-                            ]
-                    },
-                    {text: 'Docker', link: '/dev-ops/container/docker.md'},
-
-                ]
-            },
-            {
-                text: '面试和职场',
-                collapsed: true,
-                link: '/work/',
-                items: [
-                    {text: '面试', link: '/work/interview/'},
-                    {text: '职场', link: '/work/workplace/'},
-                    {text: '认证', link: '/work/certifications/'}
-                ]
-            },
-            {
-                text: '短文',
-                collapsed: true,
-                link: '/article/',
-                items: [
-                    {text: '星途漫记', link: '/article/journey/'}
-                ]
+                text: '术语和参考', link: 'REFERENCE', collapsed: true,
             }
         ],
 

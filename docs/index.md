@@ -8,11 +8,12 @@ hero:
   tagline: 欢迎来到 iSharkFly Health 文档
   actions:
     - theme: brand
-      text: mumps
-      link: /mumps/index
-    - theme: alt
       text: FHIR
       link: /fhir
+    - theme: alt
+      text: mumps
+      link: /mumps
+
       
 features:
   - title: iSharkFly 文档项目
