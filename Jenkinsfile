@@ -51,7 +51,7 @@ pipeline {
 		stage('Deploy to Cloudflare') {
             steps {
                 // Install Wrangler locally for the project
-                sh 'yarn install wrangler --no-save'
+                sh 'yarn add wrangler --no-save'
                 // Deploy
                 sh "npx wrangler pages deploy ./.vitepress/dist --project-name=${PROJECT_NAME}"
             }
