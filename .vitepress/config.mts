@@ -35,7 +35,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 collapsed: true,
                 link: '/fhir/',
                 items: [
-                    {text: '简介', link: '/fhir/introduction', collapsed: true},
+                    {text: '简介', link: './introduction', collapsed: true},
+                    {text: '开发者眼中的 FHIR', link: './introduction/toreader', collapsed: true},
+                    {text: 'FHIR 实现', link: './introduction/fhir-overview', collapsed: true},
+                    {text: 'FHIR 开发者指南', link: './introduction/fhir-dev-guide', collapsed: true},
+                    {text: '开放数据专题', link: './introduction/open-data-is-coming', collapsed: true},
                 ]
             },
             {
