@@ -13,7 +13,7 @@ pipeline {
 
     environment {
 
-        PRJ_NAME = 'health-docs'
+        PRJ_NAME = 'health-isharkfly-com'
         PRJ_VERSION = '0.0.1-SNAPSHOT'
 		REPO_USERNAME     = credentials('86617b35-b114-4604-b054-082c8638bf8e')
 		REPO_PASSWORD     = credentials('c96b3079-b141-43f0-b43a-c9c2adfb14ea')
