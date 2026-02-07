@@ -51,7 +51,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         ],
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/iSharkFly-Docs/docs-isharkfly-com.git'}
+            {icon: 'git', link: 'https://src.isharkfly.com/iSharkFly-Docs/health-docs.git'}
         ]
     }
 })
